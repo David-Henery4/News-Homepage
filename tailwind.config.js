@@ -19,13 +19,22 @@ module.exports = {
     },
     extend: {
       spacing: {
+        one: "1px",
+        35: "35px",
         46: "185px"
       },
       letterSpacing: {
         btn: "4px"
       },
+      fontSize: {
+        basic: "15px"
+      },
       gridTemplateColumns: {
-        bleed: "16px repeat(10, 1fr) 16px"
+        bleed: "16px repeat(10, 1fr) 16px",
+        trend: "100px repeat(3, 1fr)"
+      },
+      transitionDuration: {
+        1: "1s"
       }
     },
   },

@@ -513,93 +513,185 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.col-start-2 {
-  grid-column-start: 2;
+.fixed {
+  position: fixed;
 }
 
-.col-start-10 {
-  grid-column-start: 10;
+.absolute {
+  position: absolute;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.top-7 {
+  top: 1.75rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
 }
 
 .col-start-11 {
   grid-column-start: 11;
 }
 
+.col-start-1 {
+  grid-column-start: 1;
+}
+
 .col-end-3 {
   grid-column-end: 3;
-}
-
-.col-end-11 {
-  grid-column-end: 11;
-}
-
-.col-end-2 {
-  grid-column-end: 2;
 }
 
 .col-end-12 {
   grid-column-end: 12;
 }
 
-.my-7 {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
+.col-end-2 {
+  grid-column-end: 2;
+}
+
+.col-end-5 {
+  grid-column-end: 5;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.flex {
+  display: flex;
 }
 
 .grid {
   display: grid;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
-.h-7 {
-  height: 1.75rem;
+.hidden {
+  display: none;
 }
 
 .h-full {
   height: 100%;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .h-4 {
   height: 1rem;
 }
 
-.w-46 {
-  width: 185px;
+.h-12 {
+  height: 3rem;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-11 {
-  width: 2.75rem;
+.w-64 {
+  width: 16rem;
 }
 
-.w-4 {
-  width: 1rem;
+.w-11 {
+  width: 2.75rem;
 }
 
 .w-10 {
   width: 2.5rem;
 }
 
+.w-46 {
+  width: 185px;
+}
+
+.translate-x-full {
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .grid-cols-bleed {
   grid-template-columns: 16px repeat(10, 1fr) 16px;
 }
 
-.place-items-center {
-  place-items: center;
+.grid-cols-trend {
+  grid-template-columns: 100px repeat(3, 1fr);
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-35 {
+  gap: 35px;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 
 .self-center {
   align-self: center;
 }
 
-.justify-self-center {
-  justify-self: center;
+.justify-self-end {
+  justify-self: end;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-y-offWhite {
+  --tw-border-opacity: 1;
+  border-top-color: hsl(36 100% 99% / var(--tw-border-opacity));
+  border-bottom-color: hsl(36 100% 99% / var(--tw-border-opacity));
+}
+
+.bg-veryDarkBlue\/50 {
+  background-color: hsl(240 100% 5% / 0.5);
+}
+
+.bg-offWhite {
+  --tw-bg-opacity: 1;
+  background-color: hsl(36 100% 99% / var(--tw-bg-opacity));
 }
 
 .bg-softRed {
@@ -612,8 +704,52 @@ video {
   background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.pt-36 {
+  padding-top: 9rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
 .font-inter {
   font-family: Inter, sans-serif;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-4xl {
@@ -621,9 +757,8 @@ video {
   line-height: 2.5rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-basic {
+  font-size: 15px;
 }
 
 .text-sm {
@@ -638,11 +773,6 @@ video {
 
 .text-xl {
   font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -681,6 +811,22 @@ video {
 .text-silver {
   --tw-text-opacity: 1;
   color: hsl(236 8% 79% / var(--tw-text-opacity));
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-1 {
+  transition-duration: 1s;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover\:cursor-pointer:hover {

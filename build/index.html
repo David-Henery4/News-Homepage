@@ -31,16 +31,16 @@
     <aside id="sidebar" class="transition duration-1 ease-in-out translate-x-full fixed h-full w-64 right-0 bg-offWhite z-10">
       <img id="close" class="absolute right-5 top-7 hover:cursor-pointer" src="/assets/images/icon-menu-close.svg" alt="">
       <ul class="flex flex-col gap-6 pt-36 pl-6 pr-7 text-lg">
-        <li>Home</li>
-        <li>New</li>
-        <li>Popular</li>
-        <li>Trending</li>
-        <li>Categories</li>
+        <li class="hover:cursor-pointer">Home</li>
+        <li class="hover:cursor-pointer">New</li>
+        <li class="hover:cursor-pointer">Popular</li>
+        <li class="hover:cursor-pointer">Trending</li>
+        <li class="hover:cursor-pointer">Categories</li>
       </ul>
     </aside>
-    <div class="grid pt-7 pb-20 gap-y-8">
+    <div class="grid pt-7 pb-20 gap-y-8 max-w-md mx-auto sm:mx-0 sm:max-w-none lg:pt-22 lg:pb-32">
       <!-- NAVIGATION -->
-      <nav class="grid h-7 w-full grid-cols-bleed">
+      <nav class="grid h-7 w-full grid-cols-bleed sm:grid-cols-tabBleed">
         <div class="col-start-2 col-end-3 h-full w-11">
           <img class="h-full w-full" src="/assets/images/logo.svg" alt="logo" />
         </div>
@@ -55,11 +55,14 @@
           />
         </div>
       </nav>
-      <main class="grid grid-cols-bleed gap-y-16">
+      <main class="grid grid-cols-bleed gap-y-16 sm:grid-cols-tabBleed">
         <!-- HERO SECTION -->
         <div class="col-start-2 col-end-12 flex flex-col gap-6">
           <!-- hero image -->
-          <img src="/assets/images/image-web-3-mobile.jpg" alt="main-story" />
+          <picture>
+            <source srcset="/assets/images/image-web-3-desktop.jpg" media="(min-width:40em)">
+            <img srcset="/assets/images/image-web-3-mobile.jpg" alt="main-story" />
+          </picture>
           <!-- hero text & title -->
           <div class="flex flex-col gap-4">
             <h1 class="text-4xl font-extrabold text-veryDarkBlue">
@@ -81,7 +84,7 @@
         </div>
         <!-- NEW SECTION -->
         <div
-          class="col-start-2 col-end-12 grid gap-35 bg-veryDarkBlue px-5 py-6"
+          class="col-start-2 col-end-12 grid gap-35 bg-veryDarkBlue px-5 py-6 md:col-end-6 md:row-start-2 md:row-end-3"
         >
           <!-- new title -->
           <h2 class="text-3xl font-bold text-softOrange">New</h2>
@@ -120,7 +123,7 @@
         </div>
         <!-- TRENDING SECTION -->
         <div
-          class="col-start-2 col-end-12 flex flex-col gap-8 text-basic text-darkGrayishBlue"
+          class="col-start-2 col-end-12 flex flex-col gap-8 text-basic text-darkGrayishBlue md:row-start-2 md:row-end-3 md:col-start-7 md:col-end-12 md:justify-between"
         >
           <!-- trend -->
           <div class="min-h-32 grid w-full grid-cols-trend gap-x-6">

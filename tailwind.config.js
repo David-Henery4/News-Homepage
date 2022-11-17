@@ -18,24 +18,29 @@ module.exports = {
       inter: ["Inter, sans-serif"],
     },
     extend: {
+      screens: {
+        lrgMob: "26.56em",
+      },
       spacing: {
         one: "1px",
         35: "35px",
-        46: "185px"
+        46: "185px",
+        22: "89px"
       },
       letterSpacing: {
-        btn: "4px"
+        btn: "4px",
       },
       fontSize: {
-        basic: "15px"
+        basic: "15px",
       },
       gridTemplateColumns: {
         bleed: "16px repeat(10, 1fr) 16px",
-        trend: "100px repeat(3, 1fr)"
+        tabBleed: "82px repeat(10, 1fr) 82px",
+        trend: "100px repeat(3, 1fr)",
       },
       transitionDuration: {
-        1: "1s"
-      }
+        1: "1s",
+      },
     },
   },
   plugins: [],

@@ -38,15 +38,24 @@
         <li class="hover:cursor-pointer">Categories</li>
       </ul>
     </aside>
-    <div class="grid pt-7 pb-20 gap-y-8 max-w-md mx-auto sm:mx-0 sm:max-w-none lg:pt-22 lg:pb-32 grid-cols-bleed sm:grid-cols-tabBleed">
+    <div class="grid pt-7 pb-20 gap-y-8 max-w-md mx-auto sm:mx-0 sm:max-w-none lg:pt-22 lg:pb-32 grid-cols-bleed sm:grid-cols-tabBleed lrgLap:grid-cols-deskBleed">
       <!-- NAVIGATION -->
       <nav class="grid h-7 w-full col-start-2 col-end-12 row-start-1 row-end-2">
         <div class="col-start-1 col-end-3 h-full w-11">
           <img class="h-full w-full" src="/assets/images/logo.svg" alt="logo" />
         </div>
+        <div id="navbar-links" class="hidden lg:block col-start-10 col-end-13 h-full">
+          <ul class="flex justify-end gap-10 items-center text-darkGrayishBlue">
+            <li class="hover:cursor-pointer hover:text-softRed">Home</li>
+            <li class="hover:cursor-pointer hover:text-softRed">New</li>
+            <li class="hover:cursor-pointer hover:text-softRed">Popular</li>
+            <li class="hover:cursor-pointer hover:text-softRed">Trending</li>
+            <li class="hover:cursor-pointer hover:text-softRed">Categories</li>
+          </ul>
+        </div>
         <div
           id="burger"
-          class="col-start-11 col-end-12 h-4 w-10 self-center justify-self-end hover:cursor-pointer"
+          class="col-start-11 col-end-12 h-4 w-10 self-center justify-self-end hover:cursor-pointer lg:hidden"
         >
           <img
             class="h-full w-full"
@@ -57,25 +66,25 @@
       </nav>
       <main class="grid gap-y-16 col-start-2 col-end-12 row-start-2 row-end-3 grid-cols-12 md:gap-x-6 lg:gap-y-17">
         <!-- HERO SECTION -->
-        <div class="col-start-1 col-end-13 flex flex-col gap-6 lg:col-end-8 lg:justify-between">
+        <div class="col-start-1 col-end-13 flex flex-col gap-6 lg:col-end-9 lg:justify-between">
           <!-- hero image -->
-          <picture>
+          <picture class="h-full">
             <source srcset="/assets/images/image-web-3-desktop.jpg" media="(min-width:40em)">
-            <img srcset="/assets/images/image-web-3-mobile.jpg" alt="main-story" />
+            <img class="h-full" srcset="/assets/images/image-web-3-mobile.jpg" alt="main-story" />
           </picture>
           <!-- hero text & title -->
-          <div class="flex flex-col gap-4">
-            <h1 class="text-4xl font-extrabold text-veryDarkBlue lg:text-lrgHead lg:leading-header">
+          <div class="flex flex-col gap-4 lrgLap:flex-row">
+            <h1 class="text-4xl font-extrabold text-veryDarkBlue lg:text-lrgHead lg:leading-header lrgLap:w-1/2">
               The Bright Future of Web 3.0
             </h1>
-            <div class="flex flex-col gap-6">
-              <p class="text-basic text-darkGrayishBlue">
+            <div class="flex flex-col gap-6 lrgLap:justify-between lrgLap:w-1/2">
+              <p class="text-basic text-darkGrayishBlue lrgLap:my-auto leading-text w-11/12">
                 We dive into the next evolution of the web that claims to put
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
               <button
-                class="h-12 w-46 bg-softRed text-sm font-bold tracking-btn text-offWhite"
+                class="h-12 w-46 bg-softRed text-sm font-bold tracking-btn text-offWhite hover:bg-veryDarkBlue"
               >
                 READ MORE
               </button>
@@ -84,7 +93,7 @@
         </div>
         <!-- NEW SECTION -->
         <div
-          class="col-start-1 col-end-13 grid gap-35 bg-veryDarkBlue px-5 py-6 md:col-end-7 md:row-start-2 md:row-end-3 lg:row-start-1 lg:row-end-2 lg:col-start-8 lg:col-end-13"
+          class="col-start-1 col-end-13 grid gap-35 bg-veryDarkBlue px-5 py-6 md:col-end-7 md:row-start-2 md:row-end-3 lg:row-start-1 lg:row-end-2 lg:col-start-9 lg:col-end-13"
         >
           <!-- new title -->
           <h2 class="text-3xl font-bold text-softOrange">New</h2>
@@ -92,7 +101,7 @@
           <div class="text-basic">
             <!-- new box -->
             <div class="grid gap-2 pb-7">
-              <h3 class="text-xl font-extrabold text-offWhite">
+              <h3 class="text-xl font-extrabold text-offWhite hover:text-softOrange hover:cursor-pointer">
                 Hydrogen VS Electric Cars
               </h3>
               <p class="text-silver">
@@ -101,7 +110,7 @@
             </div>
             <!-- new box -->
             <div class="grid gap-2 border border-y-offWhite py-7">
-              <h3 class="text-xl font-extrabold text-offWhite">
+              <h3 class="text-xl font-extrabold text-offWhite hover:text-softOrange hover:cursor-pointer">
                 The Downsides of AI Artistry
               </h3>
               <p class="text-silver">
@@ -111,7 +120,7 @@
             </div>
             <!-- new box -->
             <div class="grid gap-2 pt-7">
-              <h3 class="text-xl font-extrabold text-offWhite">
+              <h3 class="text-xl font-extrabold text-offWhite hover:text-softOrange hover:cursor-pointer">
                 Is VC Funding Drying Up?
               </h3>
               <p class="text-silver">
@@ -134,7 +143,7 @@
             />
             <div class="col-start-2 col-end-5 flex flex-col gap-2">
               <h2 class="mb-1 text-3xl font-bold text-silver">01</h2>
-              <h3 class="text-lg font-extrabold text-veryDarkBlue">
+              <h3 class="text-lg font-extrabold text-veryDarkBlue hover:text-softRed hover:cursor-pointer">
                 Reviving Retro PCs
               </h3>
               <p>What happens when old PCs are given modern upgrades?</p>
@@ -149,7 +158,7 @@
             />
             <div class="col-start-2 col-end-5 flex flex-col gap-2">
               <h2 class="mb-1 text-3xl font-bold text-silver">02</h2>
-              <h3 class="text-lg font-extrabold text-veryDarkBlue">
+              <h3 class="hover:cursor-pointer text-lg font-extrabold text-veryDarkBlue hover:text-softRed">
                 Top 10 Laptops of 2022
               </h3>
               <p>Our best picks for various needs and budgets.</p>
@@ -164,7 +173,7 @@
             />
             <div class="col-start-2 col-end-5 flex flex-col gap-2">
               <h2 class="mb-1 text-3xl font-bold text-silver">03</h2>
-              <h3 class="text-lg font-extrabold text-veryDarkBlue">
+              <h3 class="cursor-pointer text-lg font-extrabold text-veryDarkBlue hover:text-softRed">
                 The Growth of Gaming
               </h3>
               <p>How the pandemic has sparked fresh opportunities.</p>

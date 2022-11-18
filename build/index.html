@@ -38,10 +38,10 @@
         <li class="hover:cursor-pointer">Categories</li>
       </ul>
     </aside>
-    <div class="grid pt-7 pb-20 gap-y-8 max-w-md mx-auto sm:mx-0 sm:max-w-none lg:pt-22 lg:pb-32">
+    <div class="grid pt-7 pb-20 gap-y-8 max-w-md mx-auto sm:mx-0 sm:max-w-none lg:pt-22 lg:pb-32 grid-cols-bleed sm:grid-cols-tabBleed">
       <!-- NAVIGATION -->
-      <nav class="grid h-7 w-full grid-cols-bleed sm:grid-cols-tabBleed">
-        <div class="col-start-2 col-end-3 h-full w-11">
+      <nav class="grid h-7 w-full col-start-2 col-end-12 row-start-1 row-end-2">
+        <div class="col-start-1 col-end-3 h-full w-11">
           <img class="h-full w-full" src="/assets/images/logo.svg" alt="logo" />
         </div>
         <div
@@ -55,9 +55,9 @@
           />
         </div>
       </nav>
-      <main class="grid grid-cols-bleed gap-y-16 sm:grid-cols-tabBleed">
+      <main class="grid gap-y-16 col-start-2 col-end-12 row-start-2 row-end-3 grid-cols-12 md:gap-x-6 lg:gap-y-17">
         <!-- HERO SECTION -->
-        <div class="col-start-2 col-end-12 flex flex-col gap-6">
+        <div class="col-start-1 col-end-13 flex flex-col gap-6 lg:col-end-8 lg:justify-between">
           <!-- hero image -->
           <picture>
             <source srcset="/assets/images/image-web-3-desktop.jpg" media="(min-width:40em)">
@@ -65,7 +65,7 @@
           </picture>
           <!-- hero text & title -->
           <div class="flex flex-col gap-4">
-            <h1 class="text-4xl font-extrabold text-veryDarkBlue">
+            <h1 class="text-4xl font-extrabold text-veryDarkBlue lg:text-lrgHead lg:leading-header">
               The Bright Future of Web 3.0
             </h1>
             <div class="flex flex-col gap-6">
@@ -84,7 +84,7 @@
         </div>
         <!-- NEW SECTION -->
         <div
-          class="col-start-2 col-end-12 grid gap-35 bg-veryDarkBlue px-5 py-6 md:col-end-6 md:row-start-2 md:row-end-3"
+          class="col-start-1 col-end-13 grid gap-35 bg-veryDarkBlue px-5 py-6 md:col-end-7 md:row-start-2 md:row-end-3 lg:row-start-1 lg:row-end-2 lg:col-start-8 lg:col-end-13"
         >
           <!-- new title -->
           <h2 class="text-3xl font-bold text-softOrange">New</h2>
@@ -123,10 +123,10 @@
         </div>
         <!-- TRENDING SECTION -->
         <div
-          class="col-start-2 col-end-12 flex flex-col gap-8 text-basic text-darkGrayishBlue md:row-start-2 md:row-end-3 md:col-start-7 md:col-end-12 md:justify-between"
+          class="col-start-1 col-end-13 flex flex-col gap-8 text-basic text-darkGrayishBlue md:row-start-2 md:row-end-3 md:col-start-7 md:col-end-13 md:justify-between lg:col-start-1 lg:col-end-13 lg:grid lg:grid-cols-12 lg:gap-x-6"
         >
           <!-- trend -->
-          <div class="min-h-32 grid w-full grid-cols-trend gap-x-6">
+          <div class="min-h-32 grid w-full grid-cols-trend gap-x-6 lg:col-start-1 lg:col-end-5">
             <img
               class="col-start-1 col-end-2 grid h-full w-full"
               src="/assets/images/image-retro-pcs.jpg"
@@ -141,7 +141,7 @@
             </div>
           </div>
           <!-- trend -->
-          <div class="min-h-32 grid w-full grid-cols-trend gap-x-6">
+          <div class="min-h-32 grid w-full grid-cols-trend gap-x-6 lg:col-start-5 lg:col-end-9">
             <img
               class="col-start-1 col-end-2 grid h-full w-full"
               src="/assets/images/image-top-laptops.jpg"
@@ -156,7 +156,7 @@
             </div>
           </div>
           <!-- trend -->
-          <div class="min-h-32 grid w-full grid-cols-trend gap-x-6">
+          <div class="min-h-32 grid w-full grid-cols-trend gap-x-6 lg:col-start-9 lg:col-end-13">
             <img
               class="col-start-1 col-end-2 grid h-full w-full"
               src="/assets/images/image-gaming-growth.jpg"

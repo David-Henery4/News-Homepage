@@ -20,18 +20,25 @@ module.exports = {
     extend: {
       screens: {
         lrgMob: "26.56em",
+        lrgLap: "125em",
       },
       spacing: {
         one: "1px",
         35: "35px",
         46: "185px",
-        22: "89px"
+        22: "89px",
+        17: "71px"
       },
       letterSpacing: {
         btn: "4px",
+        header: "56px"
+      },
+      lineHeight: {
+        header: "56px"
       },
       fontSize: {
         basic: "15px",
+        lrgHead: "56px",
       },
       gridTemplateColumns: {
         bleed: "16px repeat(10, 1fr) 16px",

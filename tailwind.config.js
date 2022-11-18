@@ -50,6 +50,9 @@ module.exports = {
       transitionDuration: {
         1: "1s",
       },
+      maxWidth: {
+        lrgWidth: "1440px",
+      }
     },
   },
   plugins: [],
